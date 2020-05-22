@@ -1,0 +1,12 @@
+{
+    "name": "leafcutter/theme-cdnjs",
+    "description": "Theme that replaces common internal libraries with CDN copies from cdnjs.com",
+    "authors": [
+        {
+            "name": "Joby Elliott",
+            "email": "code@byjoby.com"
+        }
+    ],
+    "license": "MIT",
+    "type": "leafcutter-theme"
+}
