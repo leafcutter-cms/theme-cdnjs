@@ -1,19 +1,5 @@
 packages:
-  # package for loading jquery UI and a theme
-  library/jquery-ui:
-    require:
-      - library/jquery
-    require-after:
-      - library/jquery-ui-css
-      - library/jquery-ui-theme
-    advanced:
-      url: https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js
-      integrity: sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=
-      type: js
-      media: library
-      name: jquery-ui
-      async: false
-  # package for loading just jQuery
+  # jQuery
   library/jquery:
     advanced:
       url: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js
@@ -22,7 +8,19 @@ packages:
       media: library
       name: jquery 
       async: false
-  # package for loading just vue
+  # jQuery UI JS
+  library/jquery-ui:
+    require:
+      - library/jquery
+      - library/jquery-ui-css
+    advanced:
+      url: https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js
+      integrity: sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=
+      type: js
+      media: library
+      name: jquery-ui
+      async: false
+  # vue.js
   library/vue:
     advanced:
       url: https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js
@@ -31,7 +29,7 @@ packages:
       media: library
       name: vue 
       async: false
-  # package for loading just the CSS of fontawesome
+  # Font Awesome CSS only
   library/fontawesome:
     advanced:
       url: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
