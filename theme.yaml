@@ -1,3 +1,6 @@
+# this theme should be overrideable by almost everything
+priority: 0
+
 packages:
   # jQuery
   library/jquery:
